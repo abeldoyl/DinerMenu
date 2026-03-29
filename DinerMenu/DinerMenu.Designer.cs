@@ -91,21 +91,23 @@
             // 
             DisplayLabel.AutoSize = true;
             DisplayLabel.Font = new Font("Roboto Slab", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DisplayLabel.Location = new Point(246, 122);
+            DisplayLabel.Location = new Point(253, 106);
             DisplayLabel.Name = "DisplayLabel";
             DisplayLabel.Size = new Size(100, 40);
             DisplayLabel.TabIndex = 4;
             DisplayLabel.Text = "label1";
+            DisplayLabel.TextAlign = ContentAlignment.TopCenter;
             // 
             // MenuItemLabel
             // 
             MenuItemLabel.AutoSize = true;
             MenuItemLabel.Font = new Font("Roboto Slab", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            MenuItemLabel.Location = new Point(31, 184);
+            MenuItemLabel.Location = new Point(63, 162);
             MenuItemLabel.Name = "MenuItemLabel";
             MenuItemLabel.Size = new Size(75, 31);
             MenuItemLabel.TabIndex = 5;
             MenuItemLabel.Text = "label1";
+            MenuItemLabel.TextAlign = ContentAlignment.TopCenter;
             // 
             // DinerMenu
             // 
