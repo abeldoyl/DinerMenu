@@ -34,6 +34,7 @@
             FishButton = new Button();
             ExitButton = new Button();
             DisplayLabel = new Label();
+            MenuItemLabel = new Label();
             SuspendLayout();
             // 
             // DinerMenuLabel
@@ -54,6 +55,7 @@
             SoupButton.TabIndex = 0;
             SoupButton.Text = "Soup";
             SoupButton.UseVisualStyleBackColor = true;
+            SoupButton.Click += SoupButton_Click;
             // 
             // SaladButton
             // 
@@ -63,6 +65,7 @@
             SaladButton.TabIndex = 1;
             SaladButton.Text = "Salad";
             SaladButton.UseVisualStyleBackColor = true;
+            SaladButton.Click += SaladButton_Click;
             // 
             // FishButton
             // 
@@ -72,6 +75,7 @@
             FishButton.TabIndex = 2;
             FishButton.Text = "Fish";
             FishButton.UseVisualStyleBackColor = true;
+            FishButton.Click += FishButton_Click;
             // 
             // ExitButton
             // 
@@ -86,17 +90,29 @@
             // DisplayLabel
             // 
             DisplayLabel.AutoSize = true;
-            DisplayLabel.Location = new Point(350, 200);
+            DisplayLabel.Font = new Font("Roboto Slab", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DisplayLabel.Location = new Point(246, 122);
             DisplayLabel.Name = "DisplayLabel";
-            DisplayLabel.Size = new Size(50, 20);
+            DisplayLabel.Size = new Size(100, 40);
             DisplayLabel.TabIndex = 4;
             DisplayLabel.Text = "label1";
+            // 
+            // MenuItemLabel
+            // 
+            MenuItemLabel.AutoSize = true;
+            MenuItemLabel.Font = new Font("Roboto Slab", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MenuItemLabel.Location = new Point(31, 184);
+            MenuItemLabel.Name = "MenuItemLabel";
+            MenuItemLabel.Size = new Size(75, 31);
+            MenuItemLabel.TabIndex = 5;
+            MenuItemLabel.Text = "label1";
             // 
             // DinerMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(MenuItemLabel);
             Controls.Add(DisplayLabel);
             Controls.Add(ExitButton);
             Controls.Add(FishButton);
@@ -118,5 +134,6 @@
         private Button FishButton;
         private Button ExitButton;
         private Label DisplayLabel;
+        private Label MenuItemLabel;
     }
 }
