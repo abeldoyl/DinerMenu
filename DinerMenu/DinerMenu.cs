@@ -1,7 +1,10 @@
-using System.Diagnostics.Metrics;
-using System.Reflection;
-using System.Security.Policy;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+/*
+Abel Doyle
+RCET 2265
+Spring Semester 2026
+DinerMenu
+https://github.com/abeldoyl/DinerMenu.git
+*/
 
 namespace DinerMenu
 {
@@ -12,11 +15,15 @@ namespace DinerMenu
             InitializeComponent();
             SetDefaults();
         }
+        //Custom Methods below here -----------------------------------------------------
+
         private void SetDefaults()
         {
             DisplayLabel.Text = "";
             MenuItemLabel.Text = "";
         }
+
+        //Event handlers below here -----------------------------------------------------
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
