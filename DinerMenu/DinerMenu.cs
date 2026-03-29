@@ -1,3 +1,8 @@
+using System.Diagnostics.Metrics;
+using System.Reflection;
+using System.Security.Policy;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 namespace DinerMenu
 {
     public partial class DinerMenu : Form
@@ -21,7 +26,7 @@ namespace DinerMenu
             DisplayLabel.Text = "~ Soup of the Day ~";
             MenuItemLabel.Text = "Circuit Breaker Bisque" +
                 "\n A silky roasted tomato and red pepper bisque finished with " +
-                "\n basil oil \"circuits\" and a swirl of crème fraîche, served with " +
+                "\n basil oil \"circuits\" and a swirl of cream cheese, served with " +
                 "\n crispy grilled cheese dippers cut into geometric shapes.";
         }
         private void SaladButton_Click(object sender, EventArgs e)
@@ -34,7 +39,11 @@ namespace DinerMenu
         }
         private void FishButton_Click(object sender, EventArgs e)
         {
-
+            DisplayLabel.Text = "~ Daily Fish Entree ~";
+            MenuItemLabel.Text = "Neptune’s Neural Catch" +
+                "\n A Pan seared Atlantic salmon with a crisp skin, glazed in " +
+                "\n a miso-honey reduction, served over garlic jasmine rice with " +
+                "\n sauteed onion and a drizzle of soy-ginger \"data stream\" sauce.";
         }
     }
 }
