@@ -19,7 +19,7 @@ namespace DinerMenu
 
         private void SetDefaults()
         {
-            DisplayLabel.Text = "";
+            DinerNameLabel.Text = "";
             MenuItemLabel.Text = "";
         }
 
@@ -30,7 +30,7 @@ namespace DinerMenu
         }
         private void SoupButton_Click(object sender, EventArgs e)
         {
-            DisplayLabel.Text = "~ Soup of the Day ~";
+            DinerNameLabel.Text = "~ Soup of the Day ~";
             MenuItemLabel.Text = "Circuit Breaker Bisque" +
                 "\n A silky roasted tomato and red pepper bisque finished with " +
                 "\n basil oil \"circuits\" and a swirl of cream cheese, served with " +
@@ -38,7 +38,7 @@ namespace DinerMenu
         }
         private void SaladButton_Click(object sender, EventArgs e)
         {
-            DisplayLabel.Text = "~ Daily Salad Special ~";
+            DinerNameLabel.Text = "~ Daily Salad Special ~";
             MenuItemLabel.Text = "Hydroponic Harvest Salad" +
                 "\n A fresh mix of butter lettuce, arugula, and microgreens with" +
                 "\n cucumber ribbons, cherry tomatoes, candied pecans, and " +
@@ -46,7 +46,7 @@ namespace DinerMenu
         }
         private void FishButton_Click(object sender, EventArgs e)
         {
-            DisplayLabel.Text = "~ Daily Fish Entree ~";
+            DinerNameLabel.Text = "~ Daily Fish Entree ~";
             MenuItemLabel.Text = "Neptune’s Neural Catch" +
                 "\n A Pan seared Atlantic salmon with a crisp skin, glazed in " +
                 "\n a miso-honey reduction, served over garlic jasmine rice with " +

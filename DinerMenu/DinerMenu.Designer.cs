@@ -33,7 +33,7 @@
             SaladButton = new Button();
             FishButton = new Button();
             ExitButton = new Button();
-            DisplayLabel = new Label();
+            DinerNameLabel = new Label();
             MenuItemLabel = new Label();
             SuspendLayout();
             // 
@@ -87,16 +87,16 @@
             ExitButton.UseVisualStyleBackColor = true;
             ExitButton.Click += ExitButton_Click;
             // 
-            // DisplayLabel
+            // DinerNameLabel
             // 
-            DisplayLabel.AutoSize = true;
-            DisplayLabel.Font = new Font("Roboto Slab", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DisplayLabel.Location = new Point(253, 106);
-            DisplayLabel.Name = "DisplayLabel";
-            DisplayLabel.Size = new Size(100, 40);
-            DisplayLabel.TabIndex = 4;
-            DisplayLabel.Text = "label1";
-            DisplayLabel.TextAlign = ContentAlignment.TopCenter;
+            DinerNameLabel.AutoSize = true;
+            DinerNameLabel.Font = new Font("Roboto Slab", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DinerNameLabel.Location = new Point(253, 106);
+            DinerNameLabel.Name = "DinerNameLabel";
+            DinerNameLabel.Size = new Size(100, 40);
+            DinerNameLabel.TabIndex = 4;
+            DinerNameLabel.Text = "label1";
+            DinerNameLabel.TextAlign = ContentAlignment.TopCenter;
             // 
             // MenuItemLabel
             // 
@@ -115,7 +115,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(MenuItemLabel);
-            Controls.Add(DisplayLabel);
+            Controls.Add(DinerNameLabel);
             Controls.Add(ExitButton);
             Controls.Add(FishButton);
             Controls.Add(SaladButton);
@@ -135,7 +135,7 @@
         private Button SaladButton;
         private Button FishButton;
         private Button ExitButton;
-        private Label DisplayLabel;
+        private Label DinerNameLabel;
         private Label MenuItemLabel;
     }
 }
